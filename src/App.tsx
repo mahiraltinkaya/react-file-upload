@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import { UploadContainer } from "./UploadContainer";
 
 function App() {
+  const [files, setFiles] = React.useState<File[]>([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ padding: 20 }}>
+      <UploadContainer
+        setFiles={setFiles} // setFiles function
+        files={files} // files array
+        limit={10}
+        maxsize={2} // in MB
+        // default allowed types
+        allowedTypes={[
+          "image/png",
+          "image/jpg",
+          "image/jpeg",
+          "image/webp",
+          "image/svg+xml",
+        ]}
+      ></UploadContainer>
     </div>
   );
 }
