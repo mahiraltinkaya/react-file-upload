@@ -11,6 +11,6 @@ function App() {
                 "image/jpeg",
                 "image/webp",
                 "image/svg+xml",
-            ] })));
+            ], multiple: false })));
 }
 export default App;

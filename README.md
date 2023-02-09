@@ -1,4 +1,4 @@
-# @mahiraltinkaya@react-file-upload
+# react-file-upload
 
 ## Install
 
