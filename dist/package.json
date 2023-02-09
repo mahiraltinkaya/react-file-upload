@@ -1,6 +1,6 @@
 {
   "name": "@mahiraltinkaya/react-file-upload",
-  "version": "1.0.1",
+  "version": "0.1.0",
   "private": false,
   "author": "Mahir Altınkaya <mahiraltinkaya@gmail.com>",
   "dependencies": {

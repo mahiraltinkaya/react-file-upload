@@ -66,6 +66,7 @@ const UploadContainer: React.FunctionComponent<ImageContainerProps> = ({
       fileList = [...files, ...fileList].filter((item, index) => {
         total += item.size;
         return (
+          (multiple ? true : index === 0) &&
           allowedTypes.includes(item.type) &&
           (limit ? limit > index : true) &&
           (maxsize ? total < maxsize * 1024 * 1024 : true)

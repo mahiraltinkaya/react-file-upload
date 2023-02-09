@@ -20,6 +20,7 @@ function App() {
           "image/webp",
           "image/svg+xml",
         ]}
+        multiple={false}
       ></UploadContainer>
     </div>
   );
